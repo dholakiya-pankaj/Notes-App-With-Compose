@@ -26,7 +26,7 @@ object AppModule {
     @Provides
     fun provideNoteDatabase(
         @ApplicationContext context: Context
-    ): RoomDatabase {
+    ): NotesDatabase {
         return Room.databaseBuilder(
             context,
             NotesDatabase::class.java,
